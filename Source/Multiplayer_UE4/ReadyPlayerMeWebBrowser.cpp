@@ -13,7 +13,7 @@ UWebLink* UReadyPlayerMeWebBrowser::BindBrowserToObject()
 {
 	if (!UReadyPlayerMeWebBrowser::webLinkObject) {
 		UReadyPlayerMeWebBrowser::webLinkObject = NewObject<UWebLink>(UWebLink::StaticClass());
-		webLinkObject->Rename(*UReadyPlayerMeWebBrowser::linkObjectName);
+		//webLinkObject->Rename(*UReadyPlayerMeWebBrowser::linkObjectName);
 	}
 	WebBrowserWidget->BindUObject(UReadyPlayerMeWebBrowser::linkObjectName, webLinkObject, true);
 	return webLinkObject;
